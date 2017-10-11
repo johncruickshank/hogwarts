@@ -4,8 +4,9 @@
 <% @list.each do |student| %>
 <div class='order'>
   <p>Name: <%= student.first_name() %> <%= student.last_name() %></p>
-  <p>House: <%= student.house_id() %></p>
+  <p>House: <%= student.house().name %><img src="<%= student.house.logo() %>" alt="house badge"></p>
   <p>Age: <%= student.age() %></p>
+  <p>ID: <%= student.id() %></p>
 </div>
 <% end %>
 </div>
