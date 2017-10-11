@@ -37,7 +37,7 @@ class Student
     return result
   end
 
-  def find(id)
+  def self.find(id)
     sql = "SELECT * FROM students WHERE id = $1"
     values = [id]
     student = SqlRunner.run(sql, values).first()

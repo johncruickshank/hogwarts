@@ -13,6 +13,11 @@ get '/list' do
   erb ( :list )
 end
 
+get '/find_student' do
+  @student = Student.find(params[:id])
+  erb ( :search )
+end
+
 get '/enrol' do
   erb ( :create )
 end
