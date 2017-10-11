@@ -1,0 +1,11 @@
+<h2>ALL STUDENTS OF HOGWARTS</h2>
+
+<div class="students">
+<% @list.each do |student| %>
+<div class='order'>
+  <p>Name: <%= student.first_name() %> <%= student.last_name() %></p>
+  <p>House: <%= student.house() %></p>
+  <p>House: <%= student.age() %></p>
+</div>
+<% end %>
+</div>
