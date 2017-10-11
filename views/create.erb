@@ -16,10 +16,9 @@
     <div class="data-field">
       <label for="houseSelect">Choose House:</label>
       <select name="house_id" id="houseSelect">
-        <option value="<% @house1 %>">Griffindor</option>
-        <option value="<% @house2 %>">Slytherin</option>
-        <option value="<% @house3 %>">Hufflepuff</option>
-        <option value="<% @house4 %>">Ravenclaw</option>
+        <% @houses.each do |house| %>
+        <option value="house.id"> <%= house.name %> </option>
+        <% end %>
       </select>
     </div>
 
