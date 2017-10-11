@@ -10,10 +10,18 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/list">All Students</a></li>
+        <li><a href="/list_house">All Houses</a></li>
         <li><a href="/enrol">Enrol</a></li>
         <li>
           <form action="/find_student" method="get">
               <label for="find">Find Student(ID):</label>
+              <input type="number" name="id" id="id">
+              <input type="submit" value="Search">
+          </form>
+        </li>
+        <li>
+          <form action="/find_house" method="get">
+              <label for="find">Find House(ID):</label>
               <input type="number" name="id" id="id">
               <input type="submit" value="Search">
           </form>
