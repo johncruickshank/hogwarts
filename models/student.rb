@@ -8,7 +8,7 @@ class Student
     @id = options['id'].to_i() if ['id']
     @first_name = options['first_name']
     @last_name = options['last_name']
-    @house_id = options['house_id'].to_i() if ['house_id']
+    @house_id = options['house_id'].to_i()
     @age = options['age'].to_i()
   end
 

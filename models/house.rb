@@ -5,7 +5,7 @@ class House
   attr_reader :id
 
   def initialize(options)
-    @id = options['id'].to_i() if ['id']
+    @id = options['id'].to_i()
     @name = options['name']
     @logo = options['logo']
   end

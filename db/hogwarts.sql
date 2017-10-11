@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS houses;
-DROP TABLE IF EXISTS students;
+DROP TABLE students;
+DROP TABLE houses;
 
 CREATE TABLE houses (
   id SERIAL4 PRIMARY KEY,
